@@ -1,0 +1,195 @@
+html {
+	padding: 0px 0px 0px 0px;
+}
+body {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+	color: #111111;
+	margin-left: 5px;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	border-right:1px solid #999999;
+	overflow: auto; 
+	scrollbar-face-color: #FFFFFF;
+	scrollbar-shadow-color: #EFEFEF;
+	scrollbar-highlight-color: #EFEFEF;
+	scrollbar-3dlight-color: #CCCCCC;
+	scrollbar-darkshadow-color: #999999;
+	scrollbar-track-color: #FFFFFF;
+	scrollbar-arrow-color: #666666;
+}
+
+H1, .H1, H2, .H2, H3, .H3, H4, .H4  {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#333333;
+}
+
+H1, .H1 {
+	font-size:24px;
+}
+H2, .H2 {
+	font-size:18px;
+}
+H3, .H3 {
+	font-size:16px;
+}
+H4, .H4 {
+	font-size:14px;
+}
+
+.TOC {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:22px;
+	cursor: default;
+	font-weight: bold;
+}
+
+ul.tree{
+	width: auto;
+	padding-left : 0px;
+	margin-left : 0px;
+}
+
+ul.tree img{
+ 	border : none;
+}
+ 
+
+ul.tree, ul.tree ul {
+	padding-left: 0;
+}
+
+ul.tree ul {
+	margin-left: 16px;
+		
+}
+ul.tree li.closed ul {
+	display: none;
+}
+
+
+ul.tree li {
+	list-style: none;
+	background: url(images/i-repeater.gif) 0 0 repeat-y;
+	width: auto;
+	display: block;
+	float: left;
+	clear: both;
+}
+
+
+
+ul.tree li.last {
+	list-style: none;
+	background-image: none;
+}
+
+
+ul.tree span.a {
+	background: url(images/t.gif) 0 50% no-repeat;
+	display: block;
+	float: left;
+	cursor: default;
+}
+ul.tree span.a.last {
+	background: url(images/l.gif) 0 50% no-repeat;
+}
+
+ul.tree span.b {
+	display: block;
+	float: left;
+}
+ul.tree span.a.children span.b {
+	background: url(images/minus.gif) 0 50% no-repeat;
+	cursor: pointer;
+}
+ul.tree li.closed span.a.children span.b {
+	background: url(images/plus.gif) 0 50% no-repeat;
+	cursor: pointer;
+}
+
+ul.tree span.c {
+	display: inline;
+	float: left;
+	margin-left: 16px;
+}
+ul.tree span.a.children span.c {
+	background: url(images/i-bottom.gif) 0 50% no-repeat;
+}
+ul.tree span.a.spanClosed span.c {
+	background-image: none;
+}
+
+
+ul.tree span.d {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	white-space: nowrap;
+	position:relative;
+	background: url(images/item.gif) 0 50% no-repeat;
+	display: inline;
+	float: left;
+	padding:3px 1px 3px 20px;
+	line-height: 10px;
+}
+
+ul.tree span.a.children span.d {
+	background-image: url(images/openfolder.gif);
+	padding:3px 1px 3px 22px;
+}
+ul.tree span.a.children.spanClosed span.d {
+	background-image: url(images/folder.gif);
+	padding:3px 1px 3px 22px;
+}
+
+
+ul.tree.unformatted li {
+	background-image: none;
+	padding-left: 16px;
+}
+ul.tree.unformatted li li {
+	background-image: none;
+	padding-left: 0px;
+}
+
+ul.tree li div {
+	float: right;
+	clear: right;
+	height: 1em;
+	margin-top: -26px;
+}
+
+ul.tree div a  {
+	padding: 0;
+	background-image: none;
+	min-height: auto;
+	height: auto;
+}
+
+ul.tree li a {
+	color: #444444;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ul.tree li a:link {
+	color: #444444;
+	text-decoration: none;
+}
+ul.tree li a:visited {
+	color: #444444;
+	text-decoration: none;
+}
+ul.tree li a:hover {
+	color: #111111;
+	text-decoration: underline;
+}
+ul.tree li a:active {
+	color: #111111;
+	text-decoration: none;
+}
+
+
+ul.tree li .over{
+	background-color : pink;
+}
